@@ -21,11 +21,9 @@ jobs:
           
       - name: Commit and push changes
         run: |
-          # [1] GANTI DENGAN USERNAME DAN EMAIL GITHUB KAMU (PENTING!)
           git config --global user.name "phy0n"
           git config --global user.email "phionutsss@proton.me"
-          
-          # [2] Bikin pesan commit lebih bervariasi
+
           MESSAGES=("Update commit logs" "Refactor code structure" "Fix minor bug" "Update documentation" "Chore: routine update")
           RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
           
